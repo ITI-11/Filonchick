@@ -1,0 +1,21 @@
+top
+free -b
+free -k
+ps -a
+ps -e
+ps -e -l
+mkdir /home/lubuntu/inform
+cd /home/lubuntu/inform & mkdir /home/lubuntu/inform/lab1
+mkdir /home/lubuntu/inform/lab1/catalog1 &  mkdir /home/lubuntu/inform/lab1/catalog2
+echo > /home/lubuntu/inform/lab1/file1
+cd /home/lubuntu/inform/lab1/catalog2
+echo > file3 & echo > file4
+mkdir catalog3
+echo > /home/lubuntu/inform/lab1/catalog2/catalog3/file5
+cd /home/lubuntu/inform/lab1/catalog2/catalog3
+ln /home/lubuntu/inform/lab1/file1 link_file1
+//ln -s /home/lubuntu/inform/lab1/catalog2 link_catalog2
+ln -s /home/lubuntu/inform/lab1/catalog2 link_catalog2
+cd /home/lubuntu/inform/lab1
+ln -s /home/lubuntu/inform/lab1/catalog2/catalog3/file5 s_link
+mc
